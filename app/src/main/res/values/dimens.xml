@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="image">60dp</dimen>
+    <dimen name="spinnerMargin">100dp</dimen>
+    <dimen name="stockMarginTop">15dp</dimen>
+    <dimen name="img_width_info">200dp</dimen>
+    <dimen name="img_height_info">200dp</dimen>
+    <dimen name="img_margin_info">10dp</dimen>
+    <dimen name="text_space_info">40dp</dimen>
+</resources>
