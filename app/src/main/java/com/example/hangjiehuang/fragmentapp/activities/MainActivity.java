@@ -43,14 +43,15 @@ public class MainActivity extends AppCompatActivity implements OnItemSelectionCh
         DescriptionFragment descriptionFragment = (DescriptionFragment)fragmentManager.findFragmentById(R.id.mainDescriptionFragmentL);
 
         if (descriptionFragment != null) {
+            //Estamos en una tablet
             descriptionFragment.setItem(itemIndex);
 
         } else {
             DescriptionFragment newDescriptionFragment = new DescriptionFragment();
-            Bundle args = new Bundle();
+            Bundle bundle = new Bundle();
 
-            args.putInt(getResources().getString(R.string.key_pos), itemIndex);
-            newDescriptionFragment.setArguments(args);
+            bundle.putInt(getResources().getString(R.string.key_pos), itemIndex);
+            newDescriptionFragment.setArguments(bundle);
 
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.mainListFragment, newDescriptionFragment);
